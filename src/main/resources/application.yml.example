@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/safepath_ai
+    username: YOUR_DB_USERNAME
+    password: YOUR_DB_PASSWORD
+    driver-class-name: org.postgresql.Driver
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+jwt:
+  secret: YOUR_JWT_SECRET_KEY_HERE_MAKE_IT_LONG_AND_SECURE
+  expiration: 86400000 # 24 hours
+
+logging:
+  level:
+    com.safepath.ai: DEBUG

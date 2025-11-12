@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/10 border border-white/20 backdrop-blur-lg;
+  }
+  .glass-dark {
+    @apply bg-gray-900/70 border border-gray-700/50 backdrop-blur-lg;
+  }
+  .glow-button {
+    @apply bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+  }
+  .glow-button:hover {
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.6);
+  }
+}

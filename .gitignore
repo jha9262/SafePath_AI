@@ -1,0 +1,32 @@
+# Database credentials and sensitive info
+src/main/resources/application.yml
+src/main/resources/application.properties
+*.env
+.env.local
+.env.production
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# Build outputs
+target/
+build/
+dist/
+
+# Node modules
+node_modules/
+frontend/node_modules/
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
